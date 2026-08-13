@@ -6,7 +6,8 @@ export const Navbar = () => {
     const links = [
       { href: "/", label: "主页", active: slug === "index" },
       { href: "/blog/", label: "博客", active: slug.startsWith("blog") },
-      { href: "/about/", label: "关于", active: slug.startsWith("about") },
+      // 关于页的规范地址不带斜杠（about.html），带斜杠会导致页内相对链接解析错误
+      { href: "/about", label: "关于", active: slug.startsWith("about") },
     ]
 
     return h(

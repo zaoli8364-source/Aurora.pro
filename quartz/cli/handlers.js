@@ -592,6 +592,8 @@ export async function handleBuild(argv) {
       "quartz/static/**/*",
       "**/*.tsx",
       "**/*.scss",
+      "plugins/**/*.js",
+      "plugins/**/*.json",
       "package.json",
       "quartz.config.yaml",
       "quartz.config.default.yaml",

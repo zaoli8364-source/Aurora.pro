@@ -192,6 +192,13 @@ plugins:
     layout:
       position: header
       priority: 15
+  - source:
+      repo: ./plugins/site-tweaks
+      name: site-tweaks
+    enabled: true
+    layout:
+      position: right
+      priority: 5
   - source: "@quartz-community/darkmode"
     enabled: true
     layout:

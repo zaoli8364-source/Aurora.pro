@@ -1,0 +1,29 @@
+{
+  "name": "@aurora/site-tweaks",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Site tweaks for Aurora's blog (graph title rename)",
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./components": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "quartz": {
+    "name": "site-tweaks",
+    "displayName": "Site Tweaks",
+    "category": "component",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "dependencies": [],
+    "defaultEnabled": false,
+    "defaultOptions": {},
+    "components": {
+      "SiteTweaks": {
+        "displayName": "Site Tweaks",
+        "defaultPosition": "right",
+        "defaultPriority": 5
+      }
+    }
+  }
+}

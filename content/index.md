@@ -45,4 +45,4 @@ description: Aurora 的个人博客 —— 关注 AI 与视觉创作的结合
 
 - GitHub：[zaoli8364-source](https://github.com/zaoli8364-source)
 - RSS 订阅：[index.xml](index.xml)
-- 邮箱：`aurora@example.com`（占位，记得替换成你的真实邮箱）
+- 邮箱：[zaoli8364@gmail.com](mailto:zaoli8364@gmail.com)
