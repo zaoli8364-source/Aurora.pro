@@ -1,0 +1,29 @@
+{
+  "name": "@aurora/navbar",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Navbar component for Aurora's blog (主页 / 博客 / 关于)",
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./components": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "quartz": {
+    "name": "navbar",
+    "displayName": "Navbar",
+    "category": "component",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "dependencies": [],
+    "defaultEnabled": false,
+    "defaultOptions": {},
+    "components": {
+      "Navbar": {
+        "displayName": "Navbar",
+        "defaultPosition": "header",
+        "defaultPriority": 15
+      }
+    }
+  }
+}

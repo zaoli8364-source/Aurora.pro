@@ -595,9 +595,14 @@ export async function handleBuild(argv) {
       "package.json",
       "quartz.config.yaml",
       "quartz.config.default.yaml",
+      "!node_modules/**",
+      "!.quartz-cache/**",
+      "!public/**",
+      "!.git/**",
     ])
     chokidar
-      .watch(paths, { ignoreInitial: true })
+      // usePolling avoids EMFILE from recursive fs.watch on macOS (FSEvents limit)
+      .watch(paths, { ignoreInitial: true, usePolling: true })
       .on("add", () => build(clientRefresh))
       .on("change", () => build(clientRefresh))
       .on("unlink", () => build(clientRefresh))

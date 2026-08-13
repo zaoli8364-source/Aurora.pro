@@ -162,6 +162,8 @@ async function startWatching(
     persistent: true,
     cwd: argv.directory,
     ignoreInitial: true,
+    // Polling avoids EMFILE from recursive fs.watch on macOS (FSEvents limit)
+    usePolling: true,
   })
 
   const changes: ChangeEvent[] = []
