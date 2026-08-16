@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "framework": null,
+  "buildCommand": "npx quartz plugin install --from-config && npx quartz build",
+  "outputDirectory": "public",
+  "installCommand": "npm install"
+}
