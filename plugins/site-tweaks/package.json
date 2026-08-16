@@ -5,8 +5,8 @@
   "description": "Site tweaks for Aurora's blog (graph title rename)",
   "license": "MIT",
   "exports": {
-    ".": "./index.js",
-    "./components": "./index.js",
+    ".": "./dist/index.js",
+    "./components": "./dist/index.js",
     "./package.json": "./package.json"
   },
   "quartz": {

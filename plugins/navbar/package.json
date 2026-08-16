@@ -5,8 +5,8 @@
   "description": "Navbar component for Aurora's blog (主页 / 博客 / 关于)",
   "license": "MIT",
   "exports": {
-    ".": "./index.js",
-    "./components": "./index.js",
+    ".": "./dist/index.js",
+    "./components": "./dist/index.js",
     "./package.json": "./package.json"
   },
   "quartz": {
